@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Evaluation Table</title>
+    <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="img/house.jpg" type="image/x-icon">
+ <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body>
+    <div class="w-full h-screen object-cover relative flex flex-col" >
+        <img src="img/house.jpg" class="absolute top-0 left-0 w-full h-screen object-cover Bg" alt="Background">
+    
+<div class="flex content-center justify-center pt-10 space-x-1 z-10">
+    <input type="text" placeholder="ROW"  id="userInput1" class="rounded-l-full border-solid border-4 text-center border-[#56433c]">
+    <input type="text" placeholder="COLUMN"  id="userInput2"  class="rounded-r-full border-solid border-4 text-center border-[#56433c]">
+</div>
+<div class="flex content-center justify-center pt-2 z-10">
+    <select id="select" class="border-4 border-[#56433c]">
+        <option selected="selected">Operation</option>
+        <option>Multiplication</option>
+        <option>Addition</option>
+        <option>Subtraction</option>
+        <option>Division</option>
+    </select>
+</div>
+<div class="flex content-center justify-center pt-2 z-10">
+    <button onclick="check()"  class="bg-[#2c7d77] hover:bg-[#7a584c] text-black font-bold py-2 px-4 rounded-none md:w-28 w-24 text-xs md:text-sm">Check</button>
+  </div>
+   <div class="flex content-center justify-center z-10">
+
+      
+    <table border="1" id="table1" class="text-center">
+        <tr>
+            <td>
+
+            </td>
+        </tr>
+        <tr>
+            <td center>
+              
+            </td>
+        </tr>
+    </table>
+
+   </div>
+   </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
